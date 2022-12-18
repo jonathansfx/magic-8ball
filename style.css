@@ -1,7 +1,22 @@
 body {
-margin: auto;
-text-align: left;
-width: 500px;
-
+    background-color: rgba(255, 255, 255, 0.5);
+margin: 25px auto;
+text-align: center;
+width: 600px;
+padding: 10px 0;
+border-radius: 25px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+html {
+    background: url("img/nasa-galaxy_9pu4.1248.webp") no-repeat center fixed;
+    background-size: cover;
+}
+
+.input {
+   color: gray;
+}
+
+button:hover {
+    cursor: pointer;
+}

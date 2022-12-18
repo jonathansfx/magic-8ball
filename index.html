@@ -2,7 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
+ 
   </head>
   <body>
     <title>magic 8ball</title>
@@ -10,12 +11,9 @@
     <hr />
     <p>Type in a yes/no question then click the 8ball to get a response.</p>
     <h2>question:</h2>
-    <p><input type="text" class="btn" /></p>
-    <img
-      id="img"
-      src="img/568-5689463_magic-8-ball-eight-ball-billiard-balls-billiards.png"
-      alt="8ball"
-    />
-    <h2>Answer:</h2>
+    <p><input id="input" class="input" type="text" /></p>
+<button id="btn"><img src="img/kisspng-8-ball-pool-magic-8-ball-eight-ball-billiard-ball-8-ball-pool-png-photos-5a74d2f74272c3.5980465215176056232722.jpg" alt="">
+    </button>
+    <h2 id="output" class="output">Answer: </h2>
   </body>
 </html>
