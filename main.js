@@ -1,29 +1,24 @@
-// HTML Variables
-let btnEl = document.getElementById("btn");
-let outputEl = document.getElementById("output");
-
 // Btn Event Listener
 document.getElementById("btn").addEventListener("click", btnClicked);
 
 function btnClicked() {
-// Input
-let question = document.getElementById("input");
+  // HTML Var
+  let input = document.getElementById("inputEl").value.toLowerCase();
+  let output = document.getElementById("outputEl");
 
-//If Statement
-let randNum = Math.random();
-
-// Probability
-if (randNum < 0.2) {
-outputEl.innerHTML ("Without a Doubt.")
-  } else if (randNum < 0.4) {
-outputEl.innerHTML ("As I see it, yes.")
-  } else if (randNum < 0.6) {
-outputEl.innerHTML ("Concentrate and ask again.")
-  } else if (randNum < 0.8) {
-outputEl.innerHTML ("Don't count on it.")
+  // If Statement
+  if (input === "does a magic 8ball actually work?") {
+    output.innerHTML = "How dare you doubt me?!";
+  } else if (input === "is javascript awesome?") {
+    output.innerHTML = "Of Course!";
   } else {
-outputEl.innerHTML ("Outlook not so good.")
+    let rand = Math.random();
+    if (rand < 0.2) {
+      output.innerHTML = "Without a Doubt";
+    } else if (rand < 0.4) {
+      output.innerHTML = "As I see it, yes.";
+    } else if (rand < 0.6) {
+      output.innerHTML = "Don't count on it.";
+    }
   }
-
-
 }
