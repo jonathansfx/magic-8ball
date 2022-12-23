@@ -11,13 +11,15 @@ function btnClicked() {
     output.innerHTML = "How dare you doubt me?!";
   } else if (input === "is javascript awesome?") {
     output.innerHTML = "Of Course!";
+  } else if (input === "hello") {
+    output.innerHTML = "Hi!";
   } else {
     let rand = Math.random();
-    if (rand < 0.2) {
+    if (rand <= 0.2) {
       output.innerHTML = "Without a Doubt";
-    } else if (rand < 0.4) {
+    } else if (rand <= 0.4) {
       output.innerHTML = "As I see it, yes.";
-    } else if (rand < 0.6) {
+    } else if (rand <= 0.6) {
       output.innerHTML = "Don't count on it.";
     }
   }
